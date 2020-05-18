@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .inlineTable{            
+            display: inline-block;
+                  
+        }
+    </style>
+<body>
+    <h1 align="center"> INDIA vs PAKISTAN</h1>
+    <form>
+        <table border=9 align="center">
+            <tr>
+               <td> <label> INDIA SCORE </label></td>
+               <td> <label> PAKISTAN SCORE</label></td>
+            </tr>
+            <tr>
+                <td> <input type="text" id="Score_T1"></td>
+                <td> <input type="text" id="Score_T2"></td>
+             </tr>
+             <tr>
+                <td> <label>Result</label></td>
+                <td> <input type="text" id="Win_team"></td>
+             </tr>
+        </table>
+        <br>
+        <div class="scoreboard" style="text-align:center;">
+            <h1>SCORE BOARD</h1>
+            <br>
+            <table class="inlineTable" id="T1_scoreboard" border=5 align="center">
+                <tr>
+                    <th>INDIAN BATSMAN</th><th>Runs</th>
+                </tr>
+            </table>  
+
+          
+            <table  class="inlineTable" id="T2_scoreboard" border=5 align="center">
+                <tr>
+                    <th>PAKISTANI BATSMAN</th> <th>Runs</th>
+                </tr>
+            </table>
+
+        </div>
+
+    
+    </form>
+    <script src="FinalResult.js"></script>
+</body>
+</html>
