@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>simple form page</title>
+    <style media="screen">
+      body{
+        background:violet;
+      }
+      table,th,td{
+        border: 2px solid black;
+        border-collapse:collapse;
+        background-color:skyblue;
+      }
+      th,td{
+        padding:20px;
+      }
+      th{
+        text-align:center;
+      }
+      .content{
+        max-width:400px;
+        margin:auto;
+        background :orange;
+        padding:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+
+    <h1><font color="blue">Fill this form</font></h1>
+    <table style= "width:100%">
+      <tr>
+        <th>Player Name</th>
+        <th>No. of Centuries</th>
+        <th>Average</th>
+      </tr>
+      <tr>
+        <td>Sachin</td>
+        <td>100</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>Dhoni</td>
+        <td>30</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Sehwag</td>
+        <td>38</td>
+        <td>40</td>
+      </tr>
+
+    </table>
+    <br><br>
+    <form class="" action="index.html" method="post">
+      <b><font color = "blue">Student details :</font></b> <br>
+      <label for="student">Student Name </label><br>
+      <input type="text" name="" id="studnet" value=""><br>
+      <label for="college">College Name </label><br>
+      <input type="text" name="" id="college" value="">
+    </form>
+    <br><br>
+     <form class="" action="index.html" method="post">
+       <b><font color = "blue">Mother Tongue :</font></b> <br>
+       <input type="radio" name="language" value="" id="l1">
+       <label for="l1">Tamil</label>
+       <input type="radio" name="language" value="" id="l2">
+       <label for="l2">Telugu</label>
+       <input type="radio" name="language" value="" id="l3">
+       <label for="l3">Hindi</label>
+       <input type="radio" name="language" value="" id="l4">
+       <label for="l4">Malayalam</label>
+       <input type="radio" name="language" value="" id="l5">
+       <label for="l5">Kannada</label>
+     </form>
+     <br><br>
+     <form class="" action="index.html" method="post">
+       <b><font color = "blue">Favouite comic charaacters:</font></b> <br>
+       <input type="checkbox" name="" value="" id="c1">
+       <label for="c1">IronMan</label>
+       <input type="checkbox" name="" value="" id="c">
+       <label for="c2">BatMan</label>
+       <input type="checkbox" name="" value="" id="c3">
+       <label for="c3">Dr.Strange</label>
+       <input type="checkbox" name="" value="" id="c4">
+       <label for="c4">Black Panther</label>
+     </form>
+     <br><br>
+    <form class="" action="index.html" method="post">
+      <b><font color = "blue">Country :</font></b> <br>
+      <label for="country">Country :</label>
+      <select class="" name="" id="country">
+        <option value="">India</option>
+        <option value="">USA</option>
+        <option value="">Nepal</option>
+        <option value="">Sri Lanka</option>
+        <option value="">Burma</option>
+
+      </select>
+    </form>
+    <br><br>
+    <form class="" action="index.html" method="post">
+      <b><font color = "blue">Profile :</font></b> <br>
+      <label for="files">Upload your Profile :</label>
+      <input type="file" name="" value="" id ="files">
+    </form>
+    <br><br>
+    <form class="" action="index.html" method="post">
+      <label for=""><font color = "blue">Check Your Eligibility :</font> </label>
+      <input type="date" name="" value="" placeholder="dd-mm-yyyy" min="2016-10-22" max="2020-12-22" >
+    </form>
+    </div>
+  </body>
+</html>

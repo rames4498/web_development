@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NumToWords</title>
+    <style media="screen">
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 30px;
+        background-color: yellow;
+      }
+      h1 {
+        text-align: center;
+      }
+
+      #page {
+        color: green;
+        width: 750px;
+        margin: 30px auto;
+        padding: 0;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Number to Word Conversion</h1>
+    <script type="text/javascript" src="curr.js">
+      function convert(amt) {
+          var words = new Array();
+          words[0] = '';
+          words[1] = 'One';
+          words[2] = 'Two';
+          words[3] = 'Three';
+          words[4] = 'Four';
+          words[5] = 'Five';
+          words[6] = 'Six';
+          words[7] = 'Seven';
+          words[8] = 'Eight';
+          words[9] = 'Nine';
+          words[10] = 'Ten';
+          words[11] = 'Eleven';
+          words[12] = 'Twelve';
+          words[13] = 'Thirteen';
+          words[14] = 'Fourteen';
+          words[15] = 'Fifteen';
+          words[16] = 'Sixteen';
+          words[17] = 'Seventeen';
+          words[18] = 'Eighteen';
+          words[19] = 'Nineteen';
+          words[20] = 'Twenty';
+          words[30] = 'Thirty';
+          words[40] = 'Forty';
+          words[50] = 'Fifty';
+          words[60] = 'Sixty';
+          words[70] = 'Seventy';
+          words[80] = 'Eighty';
+          words[90] = 'Ninety';
+          amt = amt.toString();
+          var dum = amt.split(".");
+          //console.log(dum);
+          var num = dum[0].split(",").join("");
+          //console.log(num);
+          var n_len = num.length;
+          var string = "";
+          if (n_len <= 9) {
+              var n_arr = new Array(0, 0, 0, 0, 0, 0, 0, 0, 0);
+              var new_arr = new Array();
+              for (var i = 0; i < n_len; i++) {
+                  new_arr[i] = num.substr(i, 1);
+              }
+              for (var i = 9 - n_len, j = 0; i < 9; i++, j++) {
+                  n_arr[i] = new_arr[j];
+              }
+              for (var i = 0, j = 1; i < 9; i++, j++) {
+                  if (i == 0 || i == 2 || i == 4 || i == 7) {
+                      if (n_arr[i] == 1) {
+                          n_arr[j] = 10 + parseInt(n_arr[j]);
+                          n_arr[i] = 0;
+                      }
+                  }
+              }
+              val = "";
+              for (var i = 0; i < 9; i++) {
+                  if (i == 0 || i == 2 || i == 4 || i == 7) {
+                      val = n_arr[i] * 10;
+                  } else {
+                      val = n_arr[i];
+                  }
+                  if (val != 0) {
+                      string += words[val] + " ";
+                  }
+                  if ((i == 1 && val != 0) || (i == 0 && val != 0 && n_arr[i + 1] == 0)) {
+                      string += "Crores ";
+                  }
+                  if ((i == 3 && val != 0) || (i == 2 && val != 0 && n_arr[i + 1] == 0)) {
+                      string += "Lakhs ";
+                  }
+                  if ((i == 5 && val != 0) || (i == 4 && val != 0 && n_arr[i + 1] == 0)) {
+                      string += "Thousand ";
+                  }
+                  if (i == 6 && val != 0 && (n_arr[i + 1] != 0 && n_arr[i + 2] != 0)) {
+                      string += "Hundred and ";
+                  } else if (i == 6 && value != 0) {
+                      string += "Hundred ";
+                  }
+              }
+              string = string.split("  ").join(" ");
+          }
+
+          document.getElementById('num_to_words').innerHTML = string;
+      }
+
+    </script>
+    <div id="page">
+    <b>Number : </b><input type="text" name="number" placeholder="Enter your Number" onkeyup="number.innerHTML=convert(this.value)" />
+    <p><b>Number into words</b></p>
+    <p><b>In_words : </b><span id = "num_to_words"><i>your number in words</i></span></p>
+<div id="number"></div>
+  </div>
+  </body>
+</html>
