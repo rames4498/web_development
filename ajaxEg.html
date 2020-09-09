@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="myId">
+      <h1>Connecting ....</h1>
+      <button type="button" onclick="sendMe()" >Request something</button>
+    </div>
+    <script type="text/javascript">
+
+    function sendMe(){
+      var request  = new XMLHttpRequest() ;
+      request.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+          document.getElementById('myID').innerHTML = this.responseText
+        }
+      };
+
+      request.open('GET',"myData.txt", true);
+      request.send();
+
+    }
+
+    </script>
+  </body>
+
+</html>
