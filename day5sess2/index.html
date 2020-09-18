@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>IPL</title>
+<style media="screen">
+      body{
+        background:blue;
+      }
+      *{
+        box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        -moz-box-six=zing:border-box;
+      }
+      .content{
+        width:700px;
+        margin:auto;
+        height:auto;
+        background:skyblue;
+        padding:15px;
+      }
+      input[type=text]{
+        width:100%;
+        padding:10px;
+        font-size:22px;
+        font-weight:bold;
+        margin-top:20px;
+        border-radius:5px;
+      }
+      input[type=button]{
+        width:24%;
+        padding:10px;
+        font-size:22px;
+        font-weight:bold;
+        border-radius:5px;
+      }
+    </style>
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+<div class = "container">
+
+<h1>Welcome to Dream11 IPL 2020</h1>
+
+<div class = "jumbotron">
+
+<h2>Follow the latest updates</h2>
+
+<p>The Indian Premier League is a professional Twenty20 cricket league in India contested during March or April and May of every year by eight teams representing eight different cities in India.<br> The league was founded by the Board of Control for Cricket in India in 2008.</p>
+<p>For the latest updates of every team and for live scores click on the buttons below. </p>
+
+<button type="button" class = "btn btn-primary">Live Score</button>
+<button type="button" class = "btn btn-secondary">Punjab</button>
+<button type="button" class = "btn btn-success">Mumbai</button>
+<button type="button" class = "btn btn-danger">Rajasthan</button>
+<button type="button" class = "btn btn-warning">Banglore</button>
+<button type="button" class = "btn btn-info">Kolkata</button>
+<button type="button" class = "btn btn-dark">Chennai</button>
+<button type="button" class = "btn btn-success">Delhi</button>
+<button type="button" class = "btn btn-light">Hyderabad</button>
+<br><br>
+<div class="content">
+
+    <form class="" name="calc" action="index.html" method="post">
+         <h3><b>Runrate Calculator</b></h3>
+
+      <input type="text" name="display" value="">
+      <br><br>
+      <input type="button" class = "btn btn-warning" name="" value="9" onclick="calc.display.value+='9'">
+      <input type="button" class = "btn btn-warning" name="" value="8" onclick="calc.display.value+='8'">
+      <input type="button" class = "btn btn-warning" name="" value="7" onclick="calc.display.value+='7'">
+      <input type="button" class = "btn btn-dark" name="" value="+" onclick="calc.display.value+='+'">
+      <br><br>
+      <input type="button" class = "btn btn-warning" name="" value="6" onclick="calc.display.value+='6'">
+      <input type="button" class = "btn btn-warning" name="" value="5" onclick="calc.display.value+='5'">
+      <input type="button" class = "btn btn-warning" name="" value="4" onclick="calc.display.value+='4'">
+      <input type="button" class = "btn btn-dark" name="" value="-" onclick="calc.display.value+='-'">
+      <br><br>
+      <input type="button" class = "btn btn-warning" name="" value="3" onclick="calc.display.value+='3'">
+      <input type="button" class = "btn btn-warning" name="" value="2" onclick="calc.display.value+='2'">
+      <input type="button" class = "btn btn-warning" name="" value="1" onclick="calc.display.value+='1'">
+      <input type="button" class = "btn btn-dark" name="" value="*" onclick="calc.display.value+='*'">
+      <br><br>
+      <input type="button" class = "btn btn-dark" name="" value="0" onclick="calc.display.value+='0'">
+      <input type="button" class = "btn btn-dark" name="" value="/" onclick="calc.display.value+='/'">
+      <input type="button" class = "btn btn-dark" name="" value="%" onclick="calc.display.value+='%'">
+      <input type="button" class = "btn btn-primary" name="" value="=" onclick="calc.display.value=eval(calc.display.value)">
+      <br><br>
+      <input type="button" class = "btn btn-danger" name="" value="DELETE" onclick="calc.display.value=''" ID ="DEL">
+    </form>
+<br><br>
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1"><b>Email address</b></label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1"><b>Password</b></label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
+
+
+</div>
+</div>
+</body>
+
+
+</html>
