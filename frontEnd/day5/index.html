@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>IoT page</title>
+<style media="screen">
+      body{
+        background:skyblue;
+      }
+      *{
+        box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+      }
+      .content{
+        width:700px;
+        margin:auto;
+        height:auto;
+        background:yellow;
+        padding:15px;
+      }
+      input[type=text]{
+        width:100%;
+        padding:10px;
+        font-size:22px;
+        font-weight:bold;
+        margin-top:20px;
+        boder-radius:5px;
+      }
+      input[type=button]{
+        width:24%;
+        padding:10px;
+        font-size:22px;
+        font-weight:bold;
+        border-radius:5px;
+      }
+      h2{
+        text-align:center;
+      }
+
+
+
+
+    </style>
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+<h1>Internet of Things</h1>
+<div class = "container">
+
+<div class = "jumbotron">
+ 
+<h2>Follow the resources below </h2>
+
+<p>Internet of Things is the combination of Hardware, Software, Internet, Networking <br>click the button below for more information </p>
+<button type="button" class ="btn btn-primary" >Click me</button>
+<button type="button" class="btn btn-primary">Nvidia</button>
+<button type="button" class="btn btn-secondary">Adafruit</button>
+<button type="button" class="btn btn-success">Raspberry</button>
+<button type="button" class="btn btn-danger">Hackster.io</button>
+<button type="button" class="btn btn-warning">EFY</button>
+<button type="button" class="btn btn-info">Jetson</button>
+<button type="button" class="btn btn-light">Arduino</button>
+<button type="button" class="btn btn-dark">NodeMCU</button>
+
+<button type="button" class="btn btn-link">Link</button>
+<br><br>
+<div class="content">
+      <h2><font color="blue">CALCULATOR</font></h2>
+    <form class="" action="index.html" name = "calc" method="post">
+      <input type="text" name="display" value="">
+      <br><br>
+      <input type="button" class="btn btn-dark" name="" value="9" onclick="calc.display.value+='9'">
+      <input type="button" class="btn btn-dark" name="" value="8" onclick="calc.display.value+='8'">
+      <input type="button" class="btn btn-dark" name="" value="7" onclick="calc.display.value+='7'">
+      <input type="button" class="btn btn-success" name="" value="+" onclick="calc.display.value+='+'">
+      <br><br>
+      <input type="button" class="btn btn-dark" name="" value="6" onclick="calc.display.value+='6'">
+      <input type="button" class="btn btn-dark" name="" value="5" onclick="calc.display.value+='5'">
+      <input type="button" class="btn btn-dark" name="" value="4" onclick="calc.display.value+='4'">
+      <input type="button" class="btn btn-success" name="" value="-" onclick="calc.display.value+='-'">
+      <br><br>
+      <input type="button" class="btn btn-dark" name="" value="3" onclick="calc.display.value+='3'">
+      <input type="button" class="btn btn-dark" name="" value="2" onclick="calc.display.value+='2'">
+      <input type="button" class="btn btn-dark" name="" value="1" onclick="calc.display.value+='1'">
+      <input type="button" class="btn btn-success" name="" value="*" onclick="calc.display.value+='*'">
+      <br><br>
+      <input type="button" class="btn btn-success" name="" value="0" onclick="calc.display.value+='0'">
+      <input type="button" class="btn btn-success" name="" value="/" onclick="calc.display.value+='/'">
+      <input type="button" class="btn btn-success" name="" value="%" onclick="calc.display.value+='%'">
+      <input type="button" class ="btn btn-primary" name="" value="=" onclick="calc.display.value=eval(calc.display.value)">
+      <br><br>
+      <input type="button"   class="btn btn-danger" name="" value="DELETE" onclick="calc.display.value=''">
+    </form>
+<br><br>
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+</form>
+
+   </div>
+
+</div>
+</div>
+
+</body>
+</html>
